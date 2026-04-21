@@ -1,0 +1,39 @@
+.insights-panel {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.insight-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 1.25rem;
+  color: var(--text);
+}
+
+.insight-card p {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.insight-card strong {
+  font-size: 1.5rem;
+}
+
+.insight-card--expanded {
+  grid-column: span 2;
+}
+
+.category-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted-strong);
+  font-size: 0.95rem;
+}

@@ -1,10 +1,65 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f6ff;
+  --surface: #ffffff;
+  --surface-strong: #eef0ff;
+  --text: #141425;
+  --muted: #5f5f7d;
+  --muted-strong: #7d7d99;
+  --border: #ebeaf4;
+  --accent: #7c5df8;
+  --accent-strong: #5c46ff;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e5;
+  --shadow: 0 18px 40px rgba(124, 93, 248, 0.18);
+  --shadow-soft: 0 10px 30px rgba(100, 100, 140, 0.05);
+  --backdrop: rgba(21, 20, 38, 0.55);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0e0d1f;
+  --surface: #16152b;
+  --surface-strong: #1f1e39;
+  --text: #f7f7fb;
+  --muted: #9a9abb;
+  --muted-strong: #c3c3e2;
+  --border: #2d2c4c;
+  --accent: #8f7dff;
+  --accent-strong: #d3c9ff;
+  --danger: #f18f9e;
+  --danger-soft: #2f1621;
+  --shadow: 0 18px 40px rgba(34, 33, 78, 0.4);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.22);
+  --backdrop: rgba(4, 4, 16, 0.75);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 code {

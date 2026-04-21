@@ -1,0 +1,56 @@
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: min(540px, 100%);
+}
+
+.event-form h2 {
+  margin: 0;
+  color: var(--text);
+}
+
+.event-form label {
+  font-size: 0.9rem;
+  color: var(--muted-strong);
+}
+
+.event-form input,
+.event-form textarea {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.event-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.event-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.event-form__actions button {
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 0.95rem 1.5rem;
+  font-weight: 600;
+}
+
+.event-form__actions .secondary {
+  background: var(--surface-strong);
+  color: var(--muted-strong);
+}
+
+.event-form__actions .primary {
+  background: var(--accent);
+  color: var(--surface);
+}
